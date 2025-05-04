@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix-clone</title>
+    <link rel="stylesheet" href="netf.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="idiot-holder hide">
+      <h1 class="idiot">Its a clone,<br />Smarty pants</h1>
+      <button class="okay">Okay</button>
+    </div>
+
+    <div class="body">
+      <div class="nav-bar">
+        <div class="right-nav">
+          <select name="lang" id="drop">
+            <option value="wot">Lang</option>
+          </select>
+          <div class="nav-sign">
+            <button class="sign div">Sign In</button>
+          </div>
+        </div>
+        <div class="nav-logo">
+          <div class="logo"></div>
+        </div>
+      </div>
+      <main>
+        <div class="photo"></div>
+        <div class="titles">
+          <div class="nseries"></div>
+          <div class="tkss"></div>
+          <ul>
+            <li>2024</li>
+            <li>U/A 13+</li>
+            <li>Show</li>
+            <li>Talk Shows</li>
+          </ul>
+        </div>
+        <button class="left navs div">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="right navs div">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </main>
+      <div class="loader">
+        <i class="fa-solid fa-pause pause"></i>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <p id="p">
+        Ready to watch? Enter your email to create or restart your membership.
+      </p>
+      <div class="b-input">
+        <input type="text" placeholder="  Email address" id="input" />
+        <button onclick="getValue()" class="get">
+          Get started <span><i class="fa-solid fa-chevron-right"></i></span>
+        </button>
+      </div>
+      <h1 class="tr">Trending now</h1>
+      <div class="shows sh">
+        <img src="./imgs/wednesday.jpg" alt="do patti" class="show dont div" />
+        <img src="./imgs/stranger_things.jpg" alt="do patti" class="show div" />
+        <img src="./imgs/ololade.jpg" alt="do patti" class="show dont div" />
+        <img src="./imgs//you.jpg" alt="do patti" class="show div" />
+        <img src="./imgs/witcher.jpg" alt="do patti" class="show dont div" />
+        <img src="./imgs/airbender.jpg" alt="do patti" class="show div" />
+      </div>
+      <h1 class="tr tr2">Only on Netflix</h1>
+      <div class="shows sh2">
+        <img src="./imgs/squid-game.jpg" alt="do patti" class="show dont div" />
+        <img src="./imgs/spiderman.jpg" alt="do patti" class="show div" />
+        <img src="./imgs/do-patti.jpg" alt="do patti" class="show dont div" />
+        <img src="./imgs/lucifer.jpg" alt="do patti" class="show div" />
+        <img src="./imgs/mismatched.jpg" alt="do patti" class="show dont div" />
+        <img src="./imgs/MH.jpg" alt="do patti" class="show div" />
+      </div>
+      <h1 class="more-reasons tr">Main reasons to join</h1>
+      <div class="reasons">
+        <div class="reason">
+          Stories tailored to your <br />
+          taste
+          <div class="icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+        </div>
+        <div class="reason">
+          Cancel or switch plans <br />anytime
+          <div class="icon"><i class="fa-solid fa-handshake-simple"></i></div>
+        </div>
+        <div class="reason">
+          A place just for kids .
+          <div class="icon"><i class="fa-solid fa-heart"></i></div>
+        </div>
+        <div class="reason">
+          For your phone,tablet <br />laptop and TV
+          <div class="icon"><i class="fa-solid fa-tv"></i></div>
+        </div>
+      </div>
+      <h1 class="faqh tr">FAQs</h1>
+      <div class="faqs">
+        <div class="faq div">
+          <p class="q">What is Netflix?</p>
+          <div class="plus div"><i class="fa-solid fa-plus"></i></div>
+        </div>
+        <div class="faq div">
+          <p class="q">How much does Netflix cost?</p>
+          <div class="plus div"><i class="fa-solid fa-plus"></i></div>
+        </div>
+        <div class="faq div">
+          <p class="q">Where can I watch?</p>
+          <div class="plus div"><i class="fa-solid fa-plus"></i></div>
+        </div>
+        <div class="faq div">
+          <p class="q">How can I cancel?</p>
+          <div class="plus div"><i class="fa-solid fa-plus"></i></div>
+        </div>
+        <div class="faq div">
+          <p class="q">What can i watch on Netflix?</p>
+          <div class="plus div"><i class="fa-solid fa-plus"></i></div>
+        </div>
+        <div class="faq div">
+          <p class="q">Is Netflix good for kids?</p>
+          <div class="plus div"><i class="fa-solid fa-plus"></i></div>
+        </div>
+      </div>
+      <div class="get-started">
+        <button class="get-b div">Get started</button>
+      </div>
+      <p class="get-p">Create or restart membership.</p>
+      <footer class="qs">
+        <p>Questions? Call 000-800-&#*$-*&#</p>
+        
+      </footer>
+      <div class="list"><ul id="footer-links">
+        <li>FAQ</li>
+        <li>Account</li>
+        <li>Investor Relations</li>
+        <li>Help Centre</li>
+        <li>Media Centre</li>
+        <li>Jobs</li>
+        <li>Ways to Watch</li>
+        <li>Terms of Use</li>
+        <li>Privacy</li>
+        <li>Cookie Preferences</li>
+        <li>Corporate Information</li>
+        <li>Contact Us</li>
+        <li>Speed Test</li>
+        <li>Legal Notices</li>
+        <li>Only on Netflix</li>
+      </ul>
+      
+      <select name="lang" id="end-select">
+        
+        <option value="lang"><div class="selector">  English<i class="fa-solid fa-language"></i></div></option>
+      </select>
+    </div>
+
+    <script src="netf.js"></script>
+  </body>
+</html>
